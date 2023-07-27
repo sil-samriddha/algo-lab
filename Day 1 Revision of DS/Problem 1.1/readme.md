@@ -5,7 +5,6 @@
 ## INPUT
 Size of array is 'n' and read 'n' number of elements from a disc file
 ```
-7
 2 1 0 5 7 4 1
 ```
 

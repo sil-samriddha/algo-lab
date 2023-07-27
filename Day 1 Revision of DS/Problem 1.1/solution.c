@@ -1,14 +1,24 @@
 #include <stdio.h>
 
 int main(){
-    int size, i, second_largest, second_smallest;
-    printf("Enter the size of array : ");
-    scanf("%d",&size);
+    int size = 0, i, second_largest, second_smallest;
+    int arr[50];
 
-    int arr[size];
-    printf("Enter elements one by one\n");
+    FILE *file;
+    file = fopen("input_disc.txt", "r");
+
+    if(file == NULL){
+        printf("Error opening input file\n");
+        return 1;
+    }
+    while (fscanf(file, "%d", &arr[size]) == 1)
+        size++;
+    
+    fclose(file);
+
+    printf("Elements of array\n");
     for(i=0; i<size; i++)
-        scanf("%d",&arr[i]);
+        printf("%d ", arr[i]);
 
     int largest = arr[0], smallest = arr[0];
 
@@ -30,6 +40,6 @@ int main(){
 
     }
 
-    printf ("Second smallest : %d\n", second_smallest);
+    printf ("\nSecond smallest : %d\n", second_smallest);
     printf ("Second largest : %d\n", second_largest);
 }
