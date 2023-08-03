@@ -9,8 +9,8 @@ Give the contents of the input disc file `inDec.dat`
 ```
 ## TERMINAL INPUT
 ```console
-$ gcc solution.c -o solution.out
-$ ./solution.out 3 inDec.dat outBin.dat
+$ gcc lab2q1.c -o lab2q1.out
+$ ./lab2q1.out 3 inDec.dat outBin.dat
 ```
 ## FILE OUTPUT
 Contents of the output disc file `outBin.dat` as

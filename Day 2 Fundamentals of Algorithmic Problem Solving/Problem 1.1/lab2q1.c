@@ -10,7 +10,7 @@ long DEC_TO_BIN(int num){
 
 int main(int argc, char *argv[]) {
     if(argc < 4){
-        printf("Insufficient arguments\n");
+        printf("Insufficient arguments\nUsage: %s <total_numbers> <input_file> <output_file>\n\n", argv[0]);
         return 1;
     }
 
@@ -45,7 +45,7 @@ int main(int argc, char *argv[]) {
     }
 
     for(i=0; i<size; i++){
-        fprintf(file,"The Binary euqavalent of %d is %ld\n" , arr[i], DEC_TO_BIN(arr[i]));
+        fprintf(file,"The Binary equivalent of %d is %ld\n" , arr[i], DEC_TO_BIN(arr[i]));
     }
 
     fclose(file);
