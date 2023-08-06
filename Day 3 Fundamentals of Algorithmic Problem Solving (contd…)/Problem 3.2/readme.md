@@ -14,16 +14,11 @@ MAIN MENU (INSERTION SORT)
 2. Descending Data
 3. Random Data
 4. ERROR (EXIT)
+
+Enter a choice : 1
 ```
 ## TERMINAL OUTPUT
 ```console
-MAIN MENU (INSERTION SORT)
-1. Ascending Data
-2. Descending Data
-3. Random Data
-4. ERROR (Exit)
-
-Enter a choice : 1
 Taking input from 'inAsce.dat'
 
 Before sorting
