@@ -14,8 +14,8 @@ void ReadArray (FILE *file, char filename[15], ARRAY *arr){
     while(fscanf(file, "%d", &arr->arr[arr->size]) == 1) {
         arr->size ++;
     }
-    if(arr->size > 500){
-        printf("Out of memory [Max 500 elements]\n");
+    if(arr->size > 500 && arr->size < 300){
+        printf("Min 300 to Max 500 elements needed\n");
         exit(1);
     }
 }
