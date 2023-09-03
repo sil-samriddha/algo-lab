@@ -31,15 +31,12 @@ void InsertionSort (ARRAY *array) {
 
         while (j >= 0 && array->arr[j] > key){
             ++count;
-            printf ("\n%d -> %d \t[%d]", array->arr[j+1], array->arr[j], key);
             array->arr[j+1] = array->arr[j];
             j--;
         }
         
         array->arr[j+1] = key;
     }
-    if(count == array->size - 1) printf("\nNo Shifting");
-    printf("\n----------------------");
     printf("\nNo of comparisons : %d" , count);
     if(count == array->size - 1)
         printf("\nScenario : Best Case");
